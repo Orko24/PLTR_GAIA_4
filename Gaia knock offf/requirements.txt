@@ -1,0 +1,5 @@
+overpy == 0.6
+django
+numpy
+pandas
+googlemaps==4.10.0
