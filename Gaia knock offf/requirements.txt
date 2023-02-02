@@ -3,3 +3,4 @@ django
 numpy
 pandas
 googlemaps==4.10.0
+beautifulsoup4==4.11.2
