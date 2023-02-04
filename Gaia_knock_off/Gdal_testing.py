@@ -6,6 +6,7 @@ import os
 
 # os.add_dll_directory()
 
-gdal.VersionInfo()
+print(gdal.VersionInfo())
 
 # import pyrosm
+import pyrosm

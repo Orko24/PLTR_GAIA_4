@@ -20,12 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f22cc971-29bb-43a6-89b3-b368fac2f8c7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Gaia_knock_off/Gdal_testing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Palantir prep.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Palantir prep.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gaia_knock_off/UAT_file.py" beforeDir="false" afterPath="$PROJECT_DIR$/Gaia_knock_off/UAT_file.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gaia_knock_off/off_road.py" beforeDir="false" afterPath="$PROJECT_DIR$/Gaia_knock_off/off_road.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gaia_knock_off/Gdal_testing.py" beforeDir="false" afterPath="$PROJECT_DIR$/Gaia_knock_off/Gdal_testing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gaia_knock_off/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Gaia_knock_off/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workflow/Resources.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Workflow/Resources.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -216,22 +214,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1675218128273" />
-    <state width="1515" height="332" key="GridCell.Tab.0.bottom" timestamp="1675545963951">
+    <state width="1515" height="258" key="GridCell.Tab.0.bottom" timestamp="1675549501749">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="332" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1675545963951" />
-    <state width="1515" height="332" key="GridCell.Tab.0.center" timestamp="1675545963951">
+    <state width="1515" height="258" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1675549501749" />
+    <state width="1515" height="258" key="GridCell.Tab.0.center" timestamp="1675549501749">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="332" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1675545963951" />
-    <state width="1515" height="332" key="GridCell.Tab.0.left" timestamp="1675545963950">
+    <state width="1515" height="258" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1675549501749" />
+    <state width="1515" height="258" key="GridCell.Tab.0.left" timestamp="1675549501748">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="332" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1675545963950" />
-    <state width="1515" height="332" key="GridCell.Tab.0.right" timestamp="1675545963951">
+    <state width="1515" height="258" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1675549501748" />
+    <state width="1515" height="258" key="GridCell.Tab.0.right" timestamp="1675549501749">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="332" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1675545963951" />
+    <state width="1515" height="258" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1675549501749" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1675307556092">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

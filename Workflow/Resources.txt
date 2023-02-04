@@ -1,2 +1,3 @@
 Off road routing API: https://denikozub.github.io/Offroad-routing-engine/#installation
 OSM Data : https://udsleeds.github.io/openinfra/articles/osm-python.html
+Geospatial libraries: https://docs.djangoproject.com/en/3.0/ref/contrib/gis/install/geolibs/
