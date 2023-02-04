@@ -3,10 +3,8 @@ from fiona.ogrext import Iterator, ItemsIterator, KeysIterator
 from geopandas import GeoDataFrame
 import fiona
 import os
-
-# os.add_dll_directory()
+import pyrosm
+import matplotlib
 
 print(gdal.VersionInfo())
 
-# import pyrosm
-import pyrosm
