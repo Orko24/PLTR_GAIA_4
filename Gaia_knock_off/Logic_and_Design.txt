@@ -37,7 +37,8 @@ Code design:
 
 Code design wise the Psuedo Algorithm should look like this:
 
-Front end GUI ---> user clicks on on road direction --> enters user information i.e start address and end address -->
+Front end GUI ---> user clicks on on road direction --> enters user information i.e start address, end address and
+google API key (uses google maps on the backend as data processing engine)-->
 Rest API ---> User Information Entered into a SQL or Django ORM database --> passed onto backend onroad.py API as
 object variables ---> Variables interact with Codebase (Methods) to generate User requested solution --> User requested
 solution generated as list data ---> used to generate text file --> passed back to Django framework via ORM database -->
@@ -56,5 +57,25 @@ Foundary OS and product solutions deployment via Apollo.
 First since Off road routing design can't be broken up into objects like roads since patches with no roads can't be
 tracked as objects, lack of objects must define patch.
 
-As such the formal logic should be as follows
+As such the formal logic should be as follows:
+
+User information (start address and end destination address) ---> Rest API ---> use latitude, longitude of
+starting and end destination addresses to find location ---> Generate pbf.osm file ---> Use latitude and longitude
+information to box the boundaries for route analysis of the pbf.osm file ---> find list of roads and code them as
+objects ---> find areas where these objects are not present, use on road API to find the quickest destinations to these
+patches ---> code a route through patch
+
+
+
+3) Satellite Tracking Logic and Design:
+
+
+
+
+
+
+
+
+
+
 
