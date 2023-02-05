@@ -33,6 +33,21 @@ django in order to manipulate data for user preference.
 So user can specify the level of detail they would like and furthermore to allow Continous Integration and
 Continous Development (CI/CD) throughout the duration of the project lifespan.
 
+Code design:
+
+Code design wise the Psuedo Algorithm should look like this:
+
+Front end GUI ---> user clicks on on road direction --> enters user information i.e start address and end address -->
+Rest API ---> User Information Entered into a SQL or Django ORM database --> passed onto backend onroad.py API as
+object variables ---> Variables interact with Codebase (Methods) to generate User requested solution --> User requested
+solution generated as list data ---> used to generate text file --> passed back to Django framework via ORM database -->
+passed back to rest API ---> rest API generates JSON output ---> JSON output passed to GUI as a downloadable
+file or output, per user specification.
+
+Any furthermore modification of the psuedo algorithm, like modifying the codebase, Rest or server API's, 
+
+
+
 2) Off Road Routing Logic and Design:
 
 First since Off road routing design can't be broken up into objects like roads since patches with no roads can't be
