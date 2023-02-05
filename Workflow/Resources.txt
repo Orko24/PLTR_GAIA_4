@@ -2,4 +2,6 @@ Off road routing API: https://denikozub.github.io/Offroad-routing-engine/#instal
 OSM Data : https://udsleeds.github.io/openinfra/articles/osm-python.html
 Geospatial libraries: https://docs.djangoproject.com/en/3.0/ref/contrib/gis/install/geolibs/
 ArcGIS API: https://developers.arcgis.com/python/samples/automate-building-footprint-extraction-using-instance-segmentation/
+
 https://gis.stackexchange.com/questions/440151/how-to-fetch-osm-land-use-data-based-on-bounding-boxes-in-python
+https://github.com/hazrmard/SatTrack

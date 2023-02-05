@@ -35,9 +35,12 @@ Continous Development (CI/CD) throughout the duration of the project lifespan.
 
 Code design:
 
+As such the formal logic should be as follows:
+Coded in onroad.py
+
 Code design wise the Psuedo Algorithm should look like this:
 
-Front end GUI ---> user clicks on on road direction --> enters user information i.e start address, end address and
+Front end GUI ---> user clicks on on-road direction --> enters user information i.e start address, end address and
 google API key (uses google maps on the backend as data processing engine)-->
 Rest API ---> User Information Entered into a SQL or Django ORM database --> passed onto backend onroad.py API as
 object variables ---> Variables interact with Codebase (Methods) to generate User requested solution --> User requested
@@ -53,6 +56,7 @@ Foundary OS and product solutions deployment via Apollo.
 
 
 2) Off Road Routing Logic and Design:
+Partially coded in offroad.py
 
 First since Off road routing design can't be broken up into objects like roads since patches with no roads can't be
 tracked as objects, lack of objects must define patch.
@@ -63,7 +67,28 @@ User information (start address and end destination address) ---> Rest API ---> 
 starting and end destination addresses to find location ---> Generate pbf.osm file ---> Use latitude and longitude
 information to box the boundaries for route analysis of the pbf.osm file ---> find list of roads and code them as
 objects ---> find areas where these objects are not present, use on road API to find the quickest destinations to these
-patches ---> code a route through patch
+patches ---> generate a route through patch ---> store route in a data array or dictionary --> sort data array or
+dictionary based on lowest distance --> compare it to on road route ---> return which ever one is lower.
+
+Code design wise the Psuedo Algorithm should look like this:
+
+Front end GUI ---> user clicks on off-road direction --> enters user information i.e start address, end address --->
+google API key (uses google maps on the backend as data processing engine)-->
+Rest API ---> User Information Entered into a SQL or Django ORM database --> passed onto backend offroad.py API as
+object variables ---> Entered into off-road routing API --> off-road routing API passes variables by turning them into
+object variables into data engine ---> produces location (place name) from address ---> produces pbf.osm file --->
+uses latitude and longitude produced from front end starting and ending addresses to box pbf.osm data --->
+map all roads and patches within the box ---> generate off road routes ---> compare to on road route ---> return the
+shortest route ---> send it off back to the Rest API ---> give route information to the user in the form of JSON output.
+
+
+
+
+
+
+
+
+
 
 
 
