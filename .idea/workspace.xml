@@ -89,8 +89,14 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/main/static" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.r.configuration.RSettingsProjectConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Owner\Desktop\Palantir prep\main\static" />
+      <recent name="C:\Users\Owner\Desktop\Palantir prep\main" />
+    </key>
   </component>
   <component name="RunManager" selected="Python.Gdal_testing (1)">
     <configuration name="Gdal_testing (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
