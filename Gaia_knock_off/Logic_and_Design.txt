@@ -79,20 +79,28 @@ object variables ---> Entered into off-road routing API --> off-road routing API
 object variables into data engine ---> produces location (place name) from address ---> produces pbf.osm file --->
 uses latitude and longitude produced from front end starting and ending addresses to box pbf.osm data --->
 map all roads and patches within the box ---> generate off road routes ---> compare to on road route ---> return the
-shortest route ---> send it off back to the Rest API ---> give route information to the user in the form of JSON output.
+shortest route ---> send it off back to the Rest API ---> give route information to the user in the form of JSON output
+---> JSON output given to the Front end GUI
 
+Exact coding API's to be used (as 1 week probably won't be enough to completely reverse engineer GAIA's
+full functionalities, solo I do intend to finish up within a week or 2 of the interview date max)
 
+API's that are to be used to cut down time on the backend development:
 
+https://denikozub.github.io/Offroad-routing-engine/#installation
+https://github.com/HTenkanen/pyrosm
+*/Gaia_knock_off/onroad.py
 
-
-
-
-
-
-
-
+More Detail in workflow presentation
 
 3) Satellite Tracking Logic and Design:
+
+So the satellite function checks if a location can be tracked or not from the GAIA demo:
+https://vimeo.com/528986567/b7c83ae4ff
+
+A location can be continually surveyed in real time if by my understanding the Field of Vision (FOV) of 3 or
+more satellites overlap in that location. As such the logic should be as follows:
+
 
 
 
