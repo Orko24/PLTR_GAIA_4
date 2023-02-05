@@ -105,12 +105,26 @@ class OSM_PBF_file_generator(object):
         return file_path
 
 '''
+PSUEDO ALGO FOR OFF ROAD DIRECTIONS ARE IN THE FOLLOWING
+
 based on start and end destination, check which geographic location 
-based on geographic location 
+based on lattitude and longitude 
 
-the and try to box it in
+the and try to box it in on the osm.pbf file and feed it into 
 
+from offroad_routing import Geometry
 
+filename = "../maps/user_area.osm.pbf"
+bbox = [34, 59, 34.2, 59.1]
+geom = Geometry.parse(filename=filename, bbox=bbox)
+
+https://denikozub.github.io/Offroad-routing-engine/#installation
+
+From here an off road route can be generated 
+
+You may use stopping points based on longitude and latitude and feed into the on_road API built
+
+that will give you the instructions via text format
 '''
 
 

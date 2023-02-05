@@ -1,0 +1,35 @@
+Workflow in the Workflow folder
+
+So 3 major Features:
+
+1) On Road Routing
+2) Off Road Routing
+3) Satellite Tracking capabilities per location
+
+On Road Routing Logic:
+
+Take a set of co-ordinates and find possible routes in between them.
+
+Exact logic:
+
+1) On Road Routing
+
+Find all road combination by coding Roads as objects and make them into a
+linked list to the destination.
+
+Map the duration and distance, return the shortest distance using a Heap sorting algorithm
+import heapify
+heap = heapify(... list of distances)
+return heap[0]
+using heap[0] map to exact route
+
+In practice to cut development time using GoogleMaps API to code new server facing pythonic API to generate
+distances with 3 main information in mind
+
+Routes directions, Route directions with duration and distance for each sub step, and Route directions with duration,
+distance and geocode locations (defined by latitude, longitude: start, end) in order to feed into a webframe work like
+django in order to manipulate data for user preference.
+
+So user can specify the level of detail they would like and furthermore to allow Continous Integration and
+Continous Development (CI/CD) throughout the duration of the project lifespan.
+
