@@ -1,5 +1,13 @@
 from Gaia_knock_off.on_road import *
 import requests
+from osgeo import gdal, ogr, osr
+from fiona.ogrext import Iterator, ItemsIterator, KeysIterator
+from geopandas import GeoDataFrame
+import fiona
+import os
+import pyrosm
+import matplotlib
+from pathlib import Path
 
 '''
 set up roads API infastructure
@@ -18,6 +26,8 @@ link to the via patch
 off road instructions 
 
 '''
+
+BASE_DIR = Path(__file__).resolve().parent.parent
 
 class nearest_roads_api(object):
 
@@ -38,12 +48,7 @@ class nearest_roads_api(object):
 
     def pointers_string(self):
 
-        # url = "https://roads.googleapis.com/v1/nearestRoads?points=60.170880%2C24.942795%7C60.170879%2C24.942796%7C60.170877%2C24.942796&key=YOUR_API_KEY"
-
-        # base_url = "https://roads.googleapis.com/v1/nearestRoads?"
-
         pointers = self.pointers
-
         pointer_string = "points="
         for lat, lng in pointers:
 
@@ -76,20 +81,38 @@ class nearest_roads_api(object):
 
         return response.text
 
-# 60.170880,24.942795|60.170879,24.942796|60.170877,24.942796
 
-pointers = [('60.170880','24.942795'),('60.170879','24.942796'),('60.170877','24.942796')]
+class OSM_PBF_file_generator(object):
+    
+    def __init__(self,place_name, save_location,update=True):
 
-# api_key = "AIzaSyAxwIx5PGLy3P5ta6QpUy9TkJFSJOcGtFQ"
-#
-#
-# text = nearest_roads_api(pointers = pointers, api_key = api_key).text()
+        self.place_name = place_name
+        self.save_location = save_location
+        self.update = update
 
-# print(text)
+    def generate(self):
+
+        dir_path = os.path.join(BASE_DIR, self.save_location)
+        file_name = "{}.osm.pbf".format(self.place_name)
+        full_file_path = os.path.join(dir_path,file_name)
+
+        if not self.update:
+            if os.path.exists(full_file_path):
+                print("exists")
+                return full_file_path
+
+        file_path = pyrosm.get_data(self.place_name, directory=dir_path, update=self.update)
+        return file_path
+
+'''
+based on start and end destination, check which geographic location 
+based on geographic location 
+
+the and try to box it in
 
 
 '''
-need an algorithm to get pbf data into odd road data
-go for Resources.txt
 
-'''
+
+
+
