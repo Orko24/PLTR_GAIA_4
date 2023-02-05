@@ -12,7 +12,7 @@ Take a set of co-ordinates and find possible routes in between them.
 
 Exact logic:
 
-1) On Road Routing
+1) On Road Routing Logic and Design:
 
 Find all road combination by coding Roads as objects and make them into a
 linked list to the destination.
@@ -32,4 +32,11 @@ django in order to manipulate data for user preference.
 
 So user can specify the level of detail they would like and furthermore to allow Continous Integration and
 Continous Development (CI/CD) throughout the duration of the project lifespan.
+
+2) Off Road Routing Logic and Design:
+
+First since Off road routing design can't be broken up into objects like roads since patches with no roads can't be
+tracked as objects, lack of objects must define patch.
+
+As such the formal logic should be as follows
 
