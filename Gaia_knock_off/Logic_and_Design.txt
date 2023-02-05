@@ -44,7 +44,10 @@ solution generated as list data ---> used to generate text file --> passed back 
 passed back to rest API ---> rest API generates JSON output ---> JSON output passed to GUI as a downloadable
 file or output, per user specification.
 
-Any furthermore modification of the psuedo algorithm, like modifying the codebase, Rest or server API's,
+Any furthermore modification of the psuedo algorithm, like modifying the codebase, Rest or server API's, or adding new
+features for the user can be implemented using Git version control to continually develop, integrate and deploy the
+product on a cloud or user specified platform to rapidly engineer value addition for the customer; replicating
+Foundary OS and product solutions deployment via Apollo.
 
 
 
