@@ -101,6 +101,18 @@ https://vimeo.com/528986567/b7c83ae4ff
 A location can be continually surveyed in real time if by my understanding the Field of Vision (FOV) of 3 or
 more satellites overlap in that location. As such the logic should be as follows:
 
+Formal Logic should be as follows:
+
+User enters location information ---> Rest API ---> Backend database engine coded in Satellite_tracker.py recieves data -->
+via ORM or SQL database ---> enters information as object variables into backend API ---> Generates satellite tracking
+information ---> checks locations of satellites at time via TLE information ---> Generates FOV of each satellite at
+each time --> Programs boundaries matching FOV boundaries within latitude and longitude--->
+run a matching algorithm to see if the location ---> is within any of the FOV boundaries ---> if more than 3 return
+trackable, else non-trackable location during that time.
+
+Code design wise the Psuedo Algorithm should look like this:
+
+User enters location into Front end GUI after clicking satellite tracking--->
 
 
 
