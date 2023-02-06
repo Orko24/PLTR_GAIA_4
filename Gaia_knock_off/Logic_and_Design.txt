@@ -116,7 +116,16 @@ User enters location into Front end GUI after clicking satellite tracking ---> R
 User Information Entered into a SQL or Django ORM database --> passed onto backend satellite_tracker.py API as
 object variables ---> Entered into satellite tracker routing API -->
 satellite tracker routing API passes variables by turning them into object variables into data engine --->
-uses datetime.datetime.now() python object to program internal clock ---> use time data to produce list of satellite
+uses datetime.datetime.now() python object to program internal clock ---> use time data to produce list of satellites
+orbiting and placements ---> separate satellites based on continent to reduce computational resources --->
+calculate FOV for each one (FOV being Field of View) and check if they have the location with them ---> store satellite
+FOVs, boolean value of if location is within a satellite FOV, and Satellite name and number if possible in a
+data array or dictionary ---> count number of boolean values that are true ---> return if trackable or not defined by
+if boolean value True => 3 as well as data array in JSON form ---> pass JSON outputs and if trackable or not back to the
+Rest API ---> output user solution back to frontend served up to the GUI.
+
+Thank the user after each service!
+
 
 
 
