@@ -112,7 +112,13 @@ trackable, else non-trackable location during that time.
 
 Code design wise the Psuedo Algorithm should look like this:
 
-User enters location into Front end GUI after clicking satellite tracking--->
+User enters location into Front end GUI after clicking satellite tracking ---> Rest API --->
+User Information Entered into a SQL or Django ORM database --> passed onto backend satellite_tracker.py API as
+object variables ---> Entered into satellite tracker routing API -->
+satellite tracker routing API passes variables by turning them into object variables into data engine --->
+uses datetime.datetime.now() python object to program internal clock ---> use time data to produce list of satellite
+
+
 
 
 
