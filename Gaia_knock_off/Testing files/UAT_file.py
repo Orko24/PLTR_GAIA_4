@@ -27,7 +27,6 @@ from Gaia_knock_off.off_road import *
 #
 # pointers = [('60.170880','24.942795'),('60.170879','24.942796'),('60.170877','24.942796')]
 #
-# # api_key = "AIzaSyAxwIx5PGLy3P5ta6QpUy9TkJFSJOcGtFQ"
 # #
 # #
 # # text = nearest_roads_api(pointers = pointers, api_key = api_key).text()
